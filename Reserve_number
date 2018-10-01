@@ -1,0 +1,39 @@
+package BasicProgram;
+
+public class Reverse_no {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num =153;
+		int temp = num;
+		int sum=0;
+		//int rem=0;
+		
+		for(int i=0;i<3;i++)
+		{
+			int rem = num%10;
+			num=num/10;
+			sum=(sum*10) + rem;		
+		}
+		System.out.println(sum);
+		System.out.println(temp);
+		
+	
+	if(temp==sum)
+	{
+		System.out.println("equal no");
+	}
+	else
+	{
+	System.out.println("Not equal");	
+	}
+	
+}
+}
+
+Result:
+
+351
+153
+Not equal
